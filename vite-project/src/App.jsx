@@ -4,14 +4,14 @@ import Navbar from "./componet/Navbar";
 import UserOne from "./pages/UserOne";
 import UserTwo from "./pages/UserTwo";
 import Admin from "./pages/Admin";
-import './App.css';
+// import './App.css';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<UserOne />} />
+        {/* <Route path="/" element={<UserOne />} /> */}
         <Route path="/admin" element={<Admin />} />
         <Route path="/user" element={<UserOne />} />
         <Route path="/usertwo" element={<UserTwo />} />
