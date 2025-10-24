@@ -1,28 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import LoginPage from './FormTable'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
- import Login from './componet/Login'
-import UserDashboard1 from "./pages/UserDashboard1";
-import UserDashboard2 from "./pages/UserDashboard2";
-import AdminDashboard from "./pages/AdminDashboard";
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "./componet/Navbar";
+import UserOne from "./pages/UserOne";
+import UserTwo from "./pages/UserTwo";
+import Admin from "./pages/Admin";
+import './App.css';
 
+const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/dashboard/user1" element={<UserDashboard1 />} />
-          <Route path="/dashboard/user2" element={<UserDashboard2 />} />
-          <Route path="/dashboard/admin" element={<AdminDashboard />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
-}
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<UserOne />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/user" element={<UserOne />} />
+        <Route path="/usertwo" element={<UserTwo />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

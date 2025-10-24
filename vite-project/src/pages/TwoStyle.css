@@ -1,0 +1,28 @@
+.app-btn.active {
+  background: #2563eb;
+  color: white;
+  border: 1px solid #2563eb;
+}
+
+.app-info {
+  background: #f0f9ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid #0369a1;
+}
+
+.app-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #0c4a6e;
+}
+
+.navs-area ul li {
+  background: #dbeafe;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 3px solid #1d4ed8;
+  color: #1e3a8a;
+}
